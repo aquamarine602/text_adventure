@@ -51,11 +51,14 @@ public class Game {
 		// tutorial
 		out.println("Would you like to hear the tutorial?");
 		String tutorial_ans = input.nextLine();
-		if (tutorial_ans.equals("yes") || tutorial_ans.equals("y") || tutorial_ans.equals("Yes") || tutorial_ans.equals("Y") || tutorial_ans.equals("no") || tutorial_ans.equals("n") || tutorial_ans.equals("No") || tutorial_ans.equals("N")) {
-		} else {
-			
+		boolean tutorial_an = false;
+		while (tutorial_an == false) {
+			if (tutorial_ans.equals("yes") || tutorial_ans.equals("y") || tutorial_ans.equals("Yes") || tutorial_ans.equals("Y") || tutorial_ans.equals("no") || tutorial_ans.equals("n") || tutorial_ans.equals("No") || tutorial_ans.equals("N")) {
+				tutorial_an = true;
+			} else {
+				
+			}
 		}
-		
 		
 		
 		out.println("Type 'look' to study your surroundings!");
